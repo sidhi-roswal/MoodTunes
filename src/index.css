@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm Beige/Cream Background */
+    --background: 43 33% 91%;
+    --foreground: 0 0% 13%;
+
+    /* Soft White Cards */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+
+    /* Muted Gold/Mustard Yellow - Primary */
+    --primary: 43 65% 65%;
+    --primary-foreground: 0 0% 13%;
+
+    /* Light Grey Secondary */
+    --secondary: 0 0% 93%;
+    --secondary-foreground: 0 0% 13%;
+
+    /* Muted tones */
+    --muted: 43 20% 88%;
+    --muted-foreground: 0 0% 40%;
+
+    /* Gold Accent */
+    --accent: 43 65% 65%;
+    --accent-foreground: 0 0% 13%;
+
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Light Grey Borders */
+    --border: 0 0% 85%;
+    --input: 0 0% 85%;
+    --ring: 43 65% 65%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 43 33% 91%;
+    --sidebar-foreground: 0 0% 13%;
+    --sidebar-primary: 43 65% 65%;
+    --sidebar-primary-foreground: 0 0% 13%;
+    --sidebar-accent: 0 0% 93%;
+    --sidebar-accent-foreground: 0 0% 13%;
+    --sidebar-border: 0 0% 85%;
+    --sidebar-ring: 43 65% 65%;
+
+    --chart-1: 43 65% 65%;
+    --chart-2: 0 0% 75%;
+    --chart-3: 0 0% 50%;
+    --chart-4: 43 40% 80%;
+    --chart-5: 43 30% 70%;
+
+    --sidebar: 43 33% 91%;
+
+    --font-sans: 'Poppins', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+    --shadow-2xs: 0 1px 2px 0px hsl(0 0% 0% / 0.03);
+    --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.04);
+    --shadow-sm: 0 2px 6px 0px hsl(0 0% 0% / 0.05);
+    --shadow: 0 4px 12px 0px hsl(0 0% 0% / 0.06);
+    --shadow-md: 0 6px 16px 0px hsl(0 0% 0% / 0.07);
+    --shadow-lg: 0 8px 24px 0px hsl(0 0% 0% / 0.08);
+    --shadow-xl: 0 12px 32px 0px hsl(0 0% 0% / 0.1);
+    --shadow-2xl: 0 16px 48px 0px hsl(0 0% 0% / 0.12);
+
+    --tracking-normal: 0em;
+    --spacing: 0.25rem;
+  }
+
+  .dark {
+    /* Dark Charcoal Background */
+    --background: 0 0% 11%;
+    --foreground: 43 20% 92%;
+
+    /* Dark Card */
+    --card: 0 0% 15%;
+    --card-foreground: 43 20% 92%;
+
+    --popover: 0 0% 15%;
+    --popover-foreground: 43 20% 92%;
+
+    /* Gold Primary */
+    --primary: 43 65% 60%;
+    --primary-foreground: 0 0% 10%;
+
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 43 20% 92%;
+
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 43 65% 60%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 60% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 22%;
+    --input: 0 0% 22%;
+    --ring: 43 65% 60%;
+
+    --sidebar-background: 0 0% 11%;
+    --sidebar-foreground: 43 20% 92%;
+    --sidebar-primary: 43 65% 60%;
+    --sidebar-primary-foreground: 0 0% 10%;
+    --sidebar-accent: 0 0% 20%;
+    --sidebar-accent-foreground: 43 20% 92%;
+    --sidebar-border: 0 0% 22%;
+    --sidebar-ring: 43 65% 60%;
+
+    --chart-1: 43 65% 60%;
+    --chart-2: 0 0% 50%;
+    --chart-3: 43 40% 70%;
+    --chart-4: 0 0% 35%;
+    --chart-5: 43 30% 50%;
+
+    --sidebar: 0 0% 15%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
