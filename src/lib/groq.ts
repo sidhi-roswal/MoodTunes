@@ -2,7 +2,7 @@ import { UserProfile, SongFeedback, Song } from '@/types';
 import { createSpotifySearchUrl } from './storage';
 
 const GROQ_API_URL = 'https://api.groq.com/openai/v1';
-const GROQ_API_KEY = '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';
+const GROQ_API_KEY = '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';
 
 export function getGroqApiKey(): string {
   return GROQ_API_KEY;
